@@ -36,7 +36,7 @@ header h1 {
     font-size: 22px;
 }
 
-/* NAV */
+/* NAVIGATION */
 nav ul {
     list-style: none;
     text-align: center;
@@ -47,13 +47,15 @@ nav ul li {
     margin: 0 10px;
 }
 
+/* 🔥 FIXED VISIBILITY */
 nav a {
-    color: #e2e8f0;
+    color: #ffffff;
     text-decoration: none;
     font-size: 14px;
-    padding: 6px 12px;
+    padding: 8px 14px;
     border-radius: 20px;
-    background: rgba(255,255,255,0.1);
+    background: #334155;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -73,6 +75,7 @@ nav a:hover {
     font-size: 28px;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .hero p {
@@ -113,16 +116,25 @@ h2 {
 
 /* CARDS */
 .education-item,
-.work-item {
+.work-item,
+.card {
     margin-bottom: 20px;
     padding: 20px;
     border-left: 5px solid #0ea5e9;
     background: #f8fafc;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.education-item:hover,
+.work-item:hover,
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .education-item h3,
-.work-item h3 {
+.work-item h3,
+.card h3 {
     color: #0f172a;
 }
 
@@ -133,7 +145,7 @@ ul {
 
 ul li {
     background: #38bdf8;
-    color: white;
+    color: #ffffff;
     display: inline-block;
     padding: 8px 14px;
     margin: 6px;
