@@ -8,8 +8,8 @@
 /* BODY */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #f4f7fb;
-    color: #333;
+    background: #f1f5f9;
+    color: #1e293b;
     line-height: 1.6;
 }
 
@@ -22,8 +22,8 @@ body {
 
 /* HEADER */
 header {
-    background: #0f172a;
-    color: #fff;
+    background: #020617;
+    color: #ffffff;
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -36,6 +36,7 @@ header h1 {
     font-size: 22px;
 }
 
+/* NAV */
 nav ul {
     list-style: none;
     text-align: center;
@@ -43,47 +44,50 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 12px;
+    margin: 0 10px;
 }
 
 nav a {
-    color: #cbd5f5;
+    color: #e2e8f0;
     text-decoration: none;
     font-size: 14px;
-    transition: 0.3s;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
 }
 
 nav a:hover {
-    color: #38bdf8;
+    background: #38bdf8;
+    color: #020617;
 }
 
 /* HERO */
 .hero {
     background: linear-gradient(to right, #1e3a8a, #0ea5e9);
-    color: white;
+    color: #ffffff;
     text-align: center;
-    padding: 70px 20px;
+    padding: 80px 20px;
 }
 
 .hero h2 {
-    font-size: 26px;
+    font-size: 28px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .hero p {
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 17px;
+    margin-bottom: 20px;
 }
 
 /* BUTTON */
 .btn {
-    background: white;
+    background: #ffffff;
     color: #0ea5e9;
-    padding: 10px 18px;
+    padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 .btn:hover {
@@ -92,35 +96,34 @@ nav a:hover {
 
 /* SECTION */
 .section {
-    background: white;
+    background: #ffffff;
     margin: 30px auto;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
 /* HEADINGS */
 h2 {
-    color: #0f172a;
+    color: #020617;
     margin-bottom: 20px;
     border-left: 5px solid #0ea5e9;
     padding-left: 10px;
 }
 
-/* EDUCATION & CARDS */
+/* CARDS */
 .education-item,
 .work-item {
     margin-bottom: 20px;
-    padding: 15px;
-    border-left: 4px solid #0ea5e9;
-    background: #f9fafc;
-    border-radius: 8px;
-    transition: 0.3s;
+    padding: 20px;
+    border-left: 5px solid #0ea5e9;
+    background: #f8fafc;
+    border-radius: 10px;
 }
 
-.education-item:hover,
-.work-item:hover {
-    transform: translateY(-5px);
+.education-item h3,
+.work-item h3 {
+    color: #0f172a;
 }
 
 /* SKILLS */
@@ -129,10 +132,11 @@ ul {
 }
 
 ul li {
-    background: #e0f2fe;
+    background: #38bdf8;
+    color: white;
     display: inline-block;
-    padding: 8px 12px;
-    margin: 5px;
+    padding: 8px 14px;
+    margin: 6px;
     border-radius: 20px;
     font-size: 14px;
 }
@@ -149,12 +153,13 @@ a:hover {
 /* CONTACT */
 #contact p {
     margin-bottom: 10px;
+    font-size: 15px;
 }
 
 /* FOOTER */
 footer {
-    background: #0f172a;
-    color: white;
+    background: #020617;
+    color: #ffffff;
     text-align: center;
     padding: 15px 0;
     margin-top: 30px;
@@ -172,7 +177,7 @@ footer {
     }
 
     .hero h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .section {
