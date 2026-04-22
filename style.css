@@ -1,11 +1,9 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
     font-family: system-ui, -apple-system, sans-serif;
     background: #ffffff;
@@ -13,110 +11,95 @@ body {
     line-height: 1.7;
 }
 
-/* CONTAINER */
 .container {
-    max-width: 900px;
+    max-width: 850px;
     margin: auto;
     padding: 0 20px;
 }
 
-/* HEADER */
 header {
+    padding: 20px 0;
     border-bottom: 1px solid #e5e7eb;
-    padding: 16px 0;
+    text-align: center;
 }
 
 header h1 {
     font-size: 18px;
     font-weight: 600;
-    text-align: center;
 }
 
-/* NAV */
 nav ul {
     list-style: none;
-    text-align: center;
     margin-top: 10px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 12px;
 }
 
 nav a {
     text-decoration: none;
-    color: #374151;
+    color: #6b7280;
     font-size: 14px;
-    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
 }
 
 nav a:hover {
     color: #111827;
+    border-bottom: 2px solid #111827;
 }
 
-/* HERO */
 .hero {
-    padding: 60px 20px;
+    padding: 60px 0;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 16px;
     color: #6b7280;
     margin-bottom: 20px;
 }
 
-/* BUTTON */
 .btn {
-    display: inline-block;
     padding: 10px 16px;
     border: 1px solid #111827;
     border-radius: 6px;
     text-decoration: none;
     color: #111827;
     font-size: 14px;
-    font-weight: 500;
 }
 
 .btn:hover {
     background: #111827;
-    color: white;
+    color: #fff;
 }
 
-/* SECTION */
 .section {
     padding: 40px 0;
     border-bottom: 1px solid #f1f5f9;
 }
 
-/* HEADINGS */
 h2 {
     font-size: 20px;
-    font-weight: 600;
     margin-bottom: 15px;
 }
 
-/* TEXT */
 p {
     font-size: 15px;
     color: #374151;
-    margin-bottom: 10px;
 }
 
-/* CARDS */
-.education-item,
-.work-item {
-    margin-bottom: 20px;
+.item {
+    margin-bottom: 15px;
 }
 
-/* SKILLS */
 ul {
     list-style: none;
 }
@@ -128,30 +111,11 @@ ul li {
     margin: 4px;
     border-radius: 6px;
     font-size: 13px;
-    color: #374151;
 }
 
-/* LINKS */
-a {
-    color: #111827;
-}
-
-/* CONTACT */
-#contact p {
-    margin-bottom: 8px;
-}
-
-/* FOOTER */
 footer {
     text-align: center;
     padding: 20px 0;
     font-size: 13px;
-    color: #6b7280;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-    .hero h2 {
-        font-size: 22px;
-    }
+    color: #9ca3af;
 }
