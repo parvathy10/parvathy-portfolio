@@ -7,39 +7,36 @@
 
 /* BODY */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f1f5f9;
-    color: #1e293b;
-    line-height: 1.6;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #ffffff;
+    color: #111827;
+    line-height: 1.7;
 }
 
 /* CONTAINER */
 .container {
-    width: 85%;
+    max-width: 900px;
     margin: auto;
-    max-width: 1100px;
+    padding: 0 20px;
 }
 
 /* HEADER */
 header {
-    background: #020617;
-    color: #ffffff;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 16px 0;
 }
 
 header h1 {
+    font-size: 18px;
+    font-weight: 600;
     text-align: center;
-    margin-bottom: 10px;
-    font-size: 22px;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav ul {
     list-style: none;
     text-align: center;
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -47,95 +44,76 @@ nav ul li {
     margin: 0 10px;
 }
 
-/* 🔥 FIXED VISIBILITY */
 nav a {
-    color: #ffffff;
     text-decoration: none;
+    color: #374151;
     font-size: 14px;
-    padding: 8px 14px;
-    border-radius: 20px;
-    background: #334155;
-    transition: 0.3s;
+    font-weight: 500;
 }
 
 nav a:hover {
-    background: #38bdf8;
-    color: #020617;
+    color: #111827;
 }
 
 /* HERO */
 .hero {
-    background: linear-gradient(to right, #1e3a8a, #0ea5e9);
-    color: #ffffff;
+    padding: 60px 20px;
     text-align: center;
-    padding: 80px 20px;
 }
 
 .hero h2 {
     font-size: 28px;
+    font-weight: 600;
     margin-bottom: 10px;
-    font-weight: bold;
-    color: #ffffff;
 }
 
 .hero p {
-    font-size: 17px;
+    font-size: 16px;
+    color: #6b7280;
     margin-bottom: 20px;
 }
 
 /* BUTTON */
 .btn {
-    background: #ffffff;
-    color: #0ea5e9;
-    padding: 10px 20px;
-    border-radius: 25px;
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid #111827;
+    border-radius: 6px;
     text-decoration: none;
-    font-weight: bold;
+    color: #111827;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .btn:hover {
-    background: #e0f2fe;
+    background: #111827;
+    color: white;
 }
 
 /* SECTION */
 .section {
-    background: #ffffff;
-    margin: 30px auto;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    padding: 40px 0;
+    border-bottom: 1px solid #f1f5f9;
 }
 
 /* HEADINGS */
 h2 {
-    color: #020617;
-    margin-bottom: 20px;
-    border-left: 5px solid #0ea5e9;
-    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+p {
+    font-size: 15px;
+    color: #374151;
+    margin-bottom: 10px;
 }
 
 /* CARDS */
 .education-item,
-.work-item,
-.card {
+.work-item {
     margin-bottom: 20px;
-    padding: 20px;
-    border-left: 5px solid #0ea5e9;
-    background: #f8fafc;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.education-item:hover,
-.work-item:hover,
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.education-item h3,
-.work-item h3,
-.card h3 {
-    color: #0f172a;
 }
 
 /* SKILLS */
@@ -144,55 +122,36 @@ ul {
 }
 
 ul li {
-    background: #38bdf8;
-    color: #ffffff;
     display: inline-block;
-    padding: 8px 14px;
-    margin: 6px;
-    border-radius: 20px;
-    font-size: 14px;
+    border: 1px solid #e5e7eb;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #374151;
 }
 
 /* LINKS */
 a {
-    color: #0ea5e9;
-}
-
-a:hover {
-    text-decoration: underline;
+    color: #111827;
 }
 
 /* CONTACT */
 #contact p {
-    margin-bottom: 10px;
-    font-size: 15px;
+    margin-bottom: 8px;
 }
 
 /* FOOTER */
 footer {
-    background: #020617;
-    color: #ffffff;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
+    padding: 20px 0;
+    font-size: 13px;
+    color: #6b7280;
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
+@media (max-width: 600px) {
     .hero h2 {
         font-size: 22px;
-    }
-
-    .section {
-        padding: 25px;
     }
 }
